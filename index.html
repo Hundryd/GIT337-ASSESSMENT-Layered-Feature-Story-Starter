@@ -11,44 +11,114 @@
 </head>
 
 <body>
-    <header class="feature-header">
-        <p class="eyebrow">L1 · Feature Story</p>
-        <h1>Replace with a specific editorial title</h1>
-        <p class="lede">Write a focused introduction that establishes the subject and why it matters.</p>
-        <span class="issue-badge">Anchored detail</span>
-    </header>
-    <main>
-        <aside class="story-guide">
-            <h2>In this story</h2>
-            <a href="#section-one">First section</a>
-            <a href="#section-two">Second section</a>
-        </aside>
-        <article>
-            <section id="section-one">
-                <h2>L2-L3 · Flow and Positioned Relationships</h2>
-                <figure class="feature-figure">
-                    <img src="feature.svg" alt="Replace with a contextual alternative" width="1000" height="700">
-                    <figcaption>Replace with caption, credit, and source.</figcaption>
-                </figure>
-                <p>Replace this with sourced editorial content. Normal flow must remain readable before layered
-                    enhancements are applied.</p>
-                <blockquote class="pull-quote">Replace with a short, properly attributed pull quotation.</blockquote>
-                <p>Add enough content to demonstrate responsive flow, controlled overlap, and content growth.</p>
-            </section>
-            <section id="section-two">
-                <h2>L4-L5 · Layers, Shapes, and Fallback</h2>
-                <img class="shape-portrait" src="portrait.svg" alt="Replace with a contextual alternative" width="600"
-                    height="600">
-                <p>Use this area to demonstrate editorial wrapping with a progressively enhanced shape. Keep essential
-                    text outside the clipped or floated media.</p>
-                <p>Continue the story until the text passes the float and returns to full measure.</p>
-            </section>
-        </article>
-        <section class="documentation">
-            <h2>L6 · Documentation and Testing</h2>
-            <p>Link the completed composition plan, support/fallback record, tests, credits, and disclosure.</p>
-        </section>
-    </main>
+    <div class="page-shell">
+        <header class="feature-header">
+            <p class="eyebrow">L1 · Feature Story</p>
+            <h1>Replace with a specific editorial title</h1>
+            <p class="lede">A dark, cinematic sound shaped by mood, motion, and emotion.</p>
+            <span class="issue-badge">Anchored detail</span>
+        </header>
+
+        <main class="story-layout">
+            <aside class="story-guide" aria-label="Story navigation">
+                <h2>In this story</h2>
+                <a href="#section-one">Sound</a>
+                <a href="#section-two">Process</a>
+                <a href="#section-three">Vision</a>
+            </aside>
+
+            <article>
+                <section id="section-one">
+                    <p class="section-kicker">L2 · Flow and Layout</p>
+                    <h2>Music with weight</h2>
+                    <figure class="feature-figure">
+                        <img src="feature.svg"
+                            alt="Abstract editorial composition showing a cultural archive and a golden geometric panel"
+                            width="1000" height="700">
+                        <figcaption>Hundryd sound design, shaped by darkness, texture, and motion.</figcaption>
+                        <div class="figure-detail" aria-label="Program detail">
+                            <span class="small-label">Current mood</span>
+                            <strong>Night drive / cinematic / low light</strong>
+                        </div>
+                    </figure>
+
+                    <p>Hundryd is built for dark feeling. The sound is heavy, atmospheric, and cinematic. It moves
+                        slowly but lands hard. Every track has a pulse, a shadow, and a story underneath the surface.
+                    </p>
+
+                    <p>The goal is not noise. It is impact. Hundryd mixes synth textures, deep rhythm, and tension to
+                        create music that feels like a film scene without the screen. It is made for late nights, long
+                        roads, and quiet moments.</p>
+
+                    <p>The mood matters. The music sits between tension and release. It does not chase trends. It builds
+                        pressure, detail, and atmosphere until the listener is fully inside it.</p>
+
+                    <blockquote class="pull-quote" aria-label="Pull quote">
+                        “Dark music is not about noise. It is about feeling.”
+                    </blockquote>
+
+                    <p>Hundryd is also a creative practice. It brings together sound design, production, and code. The
+                        result feels modern, but the emotion is still at the centre.</p>
+
+                    <p>Everything is intentional. The low end carries weight. The space between notes matters. The
+                        atmosphere creates a world. That is the heart of the sound.</p>
+                </section>
+
+                <section id="section-two">
+                    <p class="section-kicker">L3 · Positioned Relationships</p>
+                    <h2>Built in the studio, shaped by code</h2>
+                    <img class="shape-portrait" src="portrait.svg"
+                        alt="Abstract portrait illustration in warm gold and maroon tones for an editorial feature"
+                        width="600" height="600">
+
+                    <p>Hundryd is more than music. It is a process. It starts with mood, then builds through texture,
+                        rhythm, and atmosphere. Every sound is chosen for how it feels.</p>
+
+                    <p>Code also shapes the sound. It gives it structure, movement, and control. The music can feel
+                        alive and mechanical at the same time. That contrast gives the project its edge.</p>
+
+                    <p>Small details matter most. A distant synth line. A low pulse. A pause in the rhythm. These
+                        details turn a track from good into memorable. The listener feels the design before they can
+                        explain it.</p>
+
+                    <p>That is the idea behind Hundryd: build atmosphere, then let emotion lead. The result feels
+                        cinematic, personal, and unmistakably dark.</p>
+                </section>
+
+                <section id="section-three">
+                    <p class="section-kicker">L4-L5 · Layers, Shape, and Fallback</p>
+                    <h2>Vision in motion</h2>
+                    <p>Hundryd creates a world. Not a loud one. A focused one. A world of shadow, tension, motion, and
+                        feeling.</p>
+
+                    <p>The visual identity follows the same idea. Dark tones, clean structure, and smooth movement. It
+                        is minimal, but not empty. Each layer adds weight and mood.</p>
+
+                    <p>At its core, Hundryd is simple: dark music for people who want atmosphere, emotion, and depth. It
+                        is made to be felt, not explained.</p>
+                </section>
+            </article>
+        </main>
+
+        <footer class="documentation" id="l6-documentation">
+            <h2>L6 · Documentation and testing</h2>
+            <ul>
+                <li>Composition plan: <a href="composition-plan.html">composition-plan.html</a></li>
+                <li>MDN support notes: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/position">position</a>,
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/clip-path">clip-path</a>, and <a
+                        href="https://developer.mozilla.org/en-US/docs/Web/CSS/shape-outside">shape-outside</a>, checked
+                    on 2026-09-20.
+                </li>
+                <li>Fallback evidence: readable source order without CSS; clip-path disabled keeps the image complete;
+                    shape-outside disabled falls back to normal flow; sticky elements disengage below 52rem.</li>
+                <li>Test record: 320px, 768px, and 1280px viewports; 200% zoom; keyboard focus states; long-title and
+                    doubled-paragraph growth; layered link activation; stacking-context inspection.</li>
+                <li>Asset credits: supplied Hundryd background and rounded monogram logo; supporting editorial art uses
+                    the provided starter SVG files.</li>
+                <li>AI disclosure: AI was used for generating paragraphs, to make the website feel more complete.</li>
+            </ul>
+        </footer>
+    </div>
 </body>
 
 </html>
