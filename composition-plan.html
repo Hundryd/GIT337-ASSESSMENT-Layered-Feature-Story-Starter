@@ -8,36 +8,46 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            line-height: 1.5;
-            max-width: 90rem;
-            margin: auto;
-            padding: 1rem;
-            color: #191919;
+            line-height: 1.6;
+            max-width: 96rem;
+            margin: 0 auto;
+            padding: 1.5rem;
+            color: #171a1d;
+            background: #f6f2ee;
         }
 
         table {
             width: 100%;
             border-collapse: collapse;
+            margin-top: 1rem;
         }
 
         th,
         td {
-            padding: .6rem;
-            border: 1px solid #999;
+            padding: 0.75rem;
+            border: 1px solid #b7b3ae;
             text-align: left;
             vertical-align: top;
         }
 
         th {
-            background: #f1f1f1;
+            background: #e7e0d9;
+        }
+
+        h1 {
+            margin-bottom: 0.25rem;
+        }
+
+        p {
+            margin-bottom: 0;
         }
     </style>
 </head>
 
 <body>
     <h1>L6 · Composition Plan</h1>
-    <p>Complete one row for every positioned, layered, clipped, rounded, or shape-wrapped element. Duplicate rows as
-        needed.</p>
+    <p>Each layer supports the story and still works without the extra styling.</p>
+
     <table>
         <thead>
             <tr>
@@ -52,16 +62,77 @@
         </thead>
         <tbody>
             <tr>
-                <td>Example only</td>
-                <td>Replace</td>
-                <td>Replace</td>
-                <td>Replace</td>
-                <td>Replace</td>
-                <td>Replace</td>
-                <td>Replace</td>
+                <td>Header issue badge</td>
+                <td>Shows the edition and adds a magazine feel.</td>
+                <td>It sits in the masthead like normal text.</td>
+                <td>It is positioned to stay aligned without moving the text.</td>
+                <td>Container: .feature-header. Stack: raised behind the title.</td>
+                <td>On mobile it moves below the intro.</td>
+                <td>Check it at 320px, 768px, and 1280px.</td>
+            </tr>
+            <tr>
+                <td>Story guide side navigation</td>
+                <td>Helps readers move through the story.</td>
+                <td>It is a normal list of links.</td>
+                <td>It stays sticky on large screens so it stays visible.</td>
+                <td>Container: .story-layout. Stack: sticky.</td>
+                <td>Below 52rem it sits in the normal flow.</td>
+                <td>Test links and sticky behavior.</td>
+            </tr>
+            <tr>
+                <td>Feature image with overlay detail</td>
+                <td>Shows the main image and adds a small label.</td>
+                <td>The image sits in the article with its caption underneath.</td>
+                <td>The label is layered over the image without changing the reading order.</td>
+                <td>Container: .feature-figure. Stack: overlay.</td>
+                <td>If the label is hidden, the image still reads clearly.</td>
+                <td>Test hover and reading order.</td>
+            </tr>
+            <tr>
+                <td>Pull quote overlap</td>
+                <td>Highlights the main idea.</td>
+                <td>The quote sits between paragraphs like normal text.</td>
+                <td>It overlaps slightly to make it stand out.</td>
+                <td>Container: article section. Stack: raised.</td>
+                <td>On small screens it goes back to full width.</td>
+                <td>Test mobile reading and spacing.</td>
+            </tr>
+            <tr>
+                <td>Background texture</td>
+                <td>Sets the mood without making the page hard to read.</td>
+                <td>The page would just be a dark background.</td>
+                <td>A soft fixed texture adds atmosphere behind the content.</td>
+                <td>Container: viewport. Stack: base.</td>
+                <td>If the texture fails, the page still stays readable.</td>
+                <td>Check readability and focus states.</td>
+            </tr>
+            <tr>
+                <td>Portrait shape wrap</td>
+                <td>Lets the image sit inside the text more naturally.</td>
+                <td>The portrait would be a normal block image.</td>
+                <td>A float and shaped wrap help the text flow around it.</td>
+                <td>Container: article section. Stack: base.</td>
+                <td>If the shape is unsupported, it still works as a normal float.</td>
+                <td>Test at 200% zoom and without shape support.</td>
+            </tr>
+            <tr>
+                <td>Layer scale and focus treatment</td>
+                <td>Keeps the layout accessible and easy to use.</td>
+                <td>Links and controls use the default browser styles.</td>
+                <td>Layer levels stay clear and focus states stay visible.</td>
+                <td>Stack levels: base, raised, sticky, overlay.</td>
+                <td>Without the styling, the content still works.</td>
+                <td>Check keyboard focus and overlap.</td>
             </tr>
         </tbody>
     </table>
+
+    <p style="margin-top:1.25rem;"><strong>MDN support notes:</strong> <a
+            href="https://developer.mozilla.org/en-US/docs/Web/CSS/position">position</a>, <a
+            href="https://developer.mozilla.org/en-US/docs/Web/CSS/clip-path">clip-path</a>, <a
+            href="https://developer.mozilla.org/en-US/docs/Web/CSS/shape-outside">shape-outside</a>, plus responsive
+        behavior from <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media">@media queries</a>. Reviewed
+        2026-09-20.</p>
 </body>
 
 </html>
