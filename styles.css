@@ -105,18 +105,36 @@ ul {
     font-weight: 700;
 }
 
+h1 {
+    margin-bottom: 0.8rem;
+    font-size: clamp(2.8rem, 5vw, 5.2rem);
+    line-height: 0.96;
+    letter-spacing: -0.06em;
+    text-wrap: balance;
+}
+
 .lede {
-    max-width: var(--measure);
-    font-size: 1.25rem;
+    max-width: 58ch;
+    margin-bottom: 0;
+    font-size: clamp(1.08rem, 1.4vw, 1.35rem);
+    color: var(--muted);
 }
 
 .issue-badge {
     position: absolute;
-    inset-block-start: 1rem;
-    inset-inline-end: 1rem;
-    padding: .5rem;
-    background: var(--color-accent);
-    color: #191919;
+    top: 1.4rem;
+    right: 1.4rem;
+    display: inline-flex;
+    align-items: center;
+    padding: 0.7rem 1.1rem;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--text);
+    letter-spacing: 0.08rem;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    font-weight: 700;
 }
 
 main {
