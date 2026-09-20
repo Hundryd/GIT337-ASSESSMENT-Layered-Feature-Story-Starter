@@ -86,10 +86,14 @@ ul {
 }
 
 .brand-mark {
+    display: block;
     width: min(24rem, 52vw);
     max-width: 260px;
-    opacity: 0.98;
-    filter: brightness(0) invert(1);
+    margin-bottom: 1rem;
+    padding: 0.55rem;
+    border-radius: 1rem;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .header-content {
@@ -365,8 +369,15 @@ article p {
     }
 }
 
-@supports (clip-path:polygon(0 0)) {
+@supports (clip-path: polygon(0 0)) {
     .feature-figure img {
-        clip-path: polygon(0 0, 100% 5%, 94% 100%, 6% 94%);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 96%);
+    }
+}
+
+@supports (shape-outside: polygon(0 0, 100% 0, 100% 100%)) {
+    .shape-portrait {
+        shape-outside: polygon(18% 0%, 100% 0%, 100% 100%, 18% 100%, 0% 74%, 0% 26%);
+        shape-margin: 1.2rem;
     }
 }
