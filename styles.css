@@ -284,9 +284,10 @@ article p {
     float: left;
     width: min(44%, 21rem);
     margin: 0.2rem 1.2rem 0.7rem 0;
-    border: 1px solid var(--line);
-    border-radius: 46% 54% 50% 50% / 53% 47% 53% 47%;
-    background: var(--panel-strong);
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    filter: none;
 }
 
 .documentation {
@@ -377,7 +378,7 @@ article p {
 
 @supports (shape-outside: polygon(0 0, 100% 0, 100% 100%)) {
     .shape-portrait {
-        shape-outside: polygon(18% 0%, 100% 0%, 100% 100%, 18% 100%, 0% 74%, 0% 26%);
-        shape-margin: 1.2rem;
+        shape-outside: none;
+        shape-margin: 0;
     }
 }
