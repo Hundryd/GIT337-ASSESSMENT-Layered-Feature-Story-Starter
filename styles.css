@@ -1,17 +1,21 @@
 :root {
-    --color-text: #404040;
-    --color-surface: #fff;
-    --color-action: #8c1d40;
-    --color-accent: #ffc627;
-    --color-border: #d0d0d0;
-    --color-muted: #5c6670;
-    --space-3: 1rem;
-    --radius: .5rem;
-    --measure: 68ch;
-    --layer-base: 0;
-    --layer-raised: 10;
-    --layer-sticky: 20;
-    --layer-overlay: 30;
+    --ink:#090b0d;
+    --panel:#12181d;
+    --panel-strong:#1a2127;
+    --surface:#f4f0eb;
+    --surface-soft:#d8d2ca;
+    --text:#f5f1ec;
+    --muted:#cdc5bc;
+    --line:rgba(255,255,255,0.12);
+    --shadow:rgba(0,0,0,0.5);
+    --measure:68ch;
+    --space:1rem;
+    --space-lg:2rem;
+    --radius:1.3rem;
+    --layer-base:0;
+    --layer-raised:10;
+    --layer-sticky:20;
+    --layer-overlay:30;
 }
 
 *,
