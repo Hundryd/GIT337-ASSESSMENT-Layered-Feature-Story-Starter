@@ -52,11 +52,30 @@ img {
     height: auto;
 }
 
+p,
+h1,
+h2,
+h3,
+ul {
+    margin-top: 0;
+}
+
+.page-shell {
+    position: relative;
+    z-index: var(--layer-base);
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: clamp(1rem, 2vw, 2rem) clamp(1rem, 3vw, 2.5rem) 3rem;
+}
+
 .feature-header {
     position: relative;
-    padding: clamp(2rem, 7vw, 6rem);
-    background: var(--color-action);
-    color: #fff;
+    padding: clamp(1.5rem, 3vw, 3rem);
+    border: 1px solid var(--line);
+    border-radius: 1.5rem;
+    background: rgba(17, 21, 25, 0.9);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
 }
 
 .eyebrow {
