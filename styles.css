@@ -78,8 +78,30 @@ ul {
     overflow: hidden;
 }
 
+.brand-row,
+.header-content,
+.issue-badge {
+    position: relative;
+    z-index: var(--layer-raised);
+}
+
+.brand-mark {
+    width: min(24rem, 52vw);
+    max-width: 260px;
+    opacity: 0.98;
+    filter: brightness(0) invert(1);
+}
+
+.header-content {
+    max-width: var(--measure);
+}
+
 .eyebrow {
-    color: var(--color-accent);
+    margin-bottom: 0.6rem;
+    color: var(--muted);
+    letter-spacing: 0.28rem;
+    text-transform: uppercase;
+    font-size: 0.72rem;
     font-weight: 700;
 }
 
