@@ -249,23 +249,48 @@ article p {
     pointer-events: none;
 }
 
+.small-label {
+    color: var(--muted);
+    font-size: 0.62rem;
+    letter-spacing: 0.12rem;
+    text-transform: uppercase;
+}
+
+.figure-detail strong {
+    font-size: 0.82rem;
+    font-weight: 700;
+}
+
 .pull-quote {
-    margin: 2rem 0;
-    padding: 1rem;
-    border-inline-start: .4rem solid var(--color-accent);
-    font-size: 1.35rem;
+    position: relative;
+    z-index: var(--layer-raised);
+    max-width: min(35rem, 78%);
+    margin: 2rem 0 1.5rem -1rem;
+    padding: 1.3rem 1.4rem 1.1rem;
+    border-left: 0.18rem solid rgba(255, 255, 255, 0.88);
+    border-radius: 0 0.9rem 0.9rem 0;
+    background: rgba(255, 255, 255, 0.04);
+    box-shadow: 0 22px 40px rgba(0, 0, 0, 0.2);
+    font-size: clamp(1.3rem, 3vw, 2.05rem);
+    line-height: 1.2;
+    color: var(--text);
 }
 
 .shape-portrait {
-    width: min(45%, 20rem);
-    margin: 0 1rem 1rem 0;
-    border-radius: 50%;
+    float: left;
+    width: min(44%, 21rem);
+    margin: 0.2rem 1.2rem 0.7rem 0;
+    border: 1px solid var(--line);
+    border-radius: 46% 54% 50% 50% / 53% 47% 53% 47%;
+    background: var(--panel-strong);
 }
 
 .documentation {
-    grid-column: 1/-1;
-    padding: 1rem;
-    background: #f1f1f1;
+    margin-top: 2.5rem;
+    padding: 1.5rem 1.4rem 1.2rem;
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    background: rgba(15, 18, 21, 0.82);
 }
 
 @media (min-width:52rem) {
