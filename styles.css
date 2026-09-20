@@ -30,10 +30,26 @@ html {
 
 body {
     margin: 0;
-    color: var(--color-text);
-    background: var(--color-surface);
+    min-height: 100vh;
     font-family: Arial, sans-serif;
-    line-height: 1.6;
+    line-height: 1.7;
+    background: var(--ink);
+    color: var(--text);
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: url("Hundryd Background no Picture.jpg") center/cover no-repeat;
+    opacity: 0.12;
+    pointer-events: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 .feature-header {
